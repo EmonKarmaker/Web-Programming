@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with File Upload</title>
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="process.php" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td colspan="2"><label for="name" >Name:</label></td>
+                <td colspan="2"><input type="text" placeholder="Enter Your Name" id="name" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="email">Email:</label></td>
+                <td colspan="2"><input type="email" id="email" name="fullemail" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="password">Password:</label></td>
+                <td colspan="2"><input type="password" id="password" name="pass" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="country">Country:</label></td>
+                <td colspan="2">
+                    <select id="country" name="cn">
+                        <option disabled selected hidden> Select Country</option>
+                        
+                        <option >India</option>
+                        <option >Nepal</option>
+                        <!-- Add country options here -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="phone">Phone:</label></td>
+                <td colspan="2"><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+            <!-- New row for file upload -->
+            <td colspan="2"><label for="file">Select Files:</label></td>
+            <td colspan="2"><input type="file" id="file" name="file" accept="image/*" multiple></td>
+        </tr>
+        <tr>
+                <td colspan="4" style="text-align: center;">
+                    <input type="submit" value="Submit" class="submit-button">
+                </td>
+            </tr>
+            
+        
+        
+        
+        <img src="465406698_552637074197168_172596607784442094_n.jpg" alt="Form Image" style="width:200px; height:auto; display:block; margin: 0 auto;">
+        </table>
+    </form>
+
+</body>
+</html>
