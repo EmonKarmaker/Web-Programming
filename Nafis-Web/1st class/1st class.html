@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Table</title>
+</head>
+
+<body>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <table>
+      <tr>
+        <th>Name</th>
+        <td><input type="text" name="name" required></td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td><input type="email" name="email" required></td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>
+          <input type="radio" name="gender" value="male" required> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td>
+          <select name="country" required>
+            <option value="">Select your country</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="Burma">Myanmar (Burma)</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="China">China</option>
+            <option value="Laos">Laos</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Mongolia">India</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Srilanka">Sri Lanka</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td><input type="number" name="age" min="1" max="120" required></td>
+      </tr>
+      <tr>
+        <th>Add Photo</th>
+        <td>
+          <input type="file" name="photo" accept="image/*" required>
+          <!-- accept="image/*" restricts file selection to images only -->
+        </td>
+      </tr>
+      <tr>
+        <th>Bio</th>
+        <td><textarea name="bio" rows="4" cols="50" placeholder="Write a short bio..." required></textarea></td>
+      </tr>
+      <tr>
+        <th>Fruits</th>
+        <td>
+          <label><input type="checkbox" name="fruits[]" value="mango"> Mango</label><br>
+          <label><input type="checkbox" name="fruits[]" value="banana"> Banana</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+
+</html>
