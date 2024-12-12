@@ -1,0 +1,129 @@
+/* General reset for consistent styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+
+/* Left Section */
+.left-section {
+  flex: 1;
+  margin-right: 50px;
+  margin-top: 55px;
+}
+
+.logo {
+  color: #0067fa;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 25px;
+  color: black;
+  line-height: 1;
+}
+
+/* Right Section */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login Box */
+.login-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 4px 4px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #0067fa;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #0067fa;
+}
+
+.forgot-password {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #0067fa;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #dddfe2;
+}
+
+.create-account-btn {
+  width: 65%;
+  padding: 15px;
+  background-color: rgba(26, 182, 59, 255);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-account-btn:hover {
+  background-color: rgba(26, 182, 59, 255);
+}
+
+/* Footer Text */
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
