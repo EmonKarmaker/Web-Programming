@@ -1,0 +1,52 @@
+.design1 {
+  background-color: cadetblue;
+  border: 1px solid chocolate;
+  width: 280px;
+  height: 25px;
+  border-radius: 7px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.txt1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: chocolate;
+  text-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#btn1 {
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 100px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+
+
+
+ <table>
+    <tr>
+      <td><label class="txt1">Username:</label></td>
+      <td><input type="text" class="design1"></td>
+    </tr>
+    <tr>
+      <td><label class="txt1">Password:</label></td>
+      <td><input type="password" class="design1"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit" id="btn1">Sign In</button>
+      </td>
+    </tr>
+  </table>

@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/bg1.webp);
+  background-size: 100%;
+}
+
+#div1 {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  box-shadow: 3px 4px 4px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design1 {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid chocolate;
+  width: 200px;
+  height: 25px;
+  border-radius: 7px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  color: chartreuse;
+  font-weight: bold;
+}
+
+.txt1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#btn1 {
+  background-color: coral;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 100px;
+  height: 25px;
+  display: block;
+  margin: 0 auto;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+.menu-bar {
+  width: 100%;
+  background-color: #333;
+  /* Dark background color */
+  position: fixed;
+  /* Keeps the menu bar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* Ensures the menu bar is above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow for the menu bar */
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  /* Removes bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* Aligns the menu items to the right */
+  padding-right: 20px;
+  /* Adds some space between the items and the edge */
+}
+
+
+.menu-bar ul li {
+  padding: 14px 20px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  /* Removes underline from links */
+  color: white;
+  /* White text */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-bar ul li a:hover {
+  color: coral;
+  /* Changes text color on hover */
+}
