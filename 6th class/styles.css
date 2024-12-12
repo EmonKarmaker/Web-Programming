@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f3f2ef;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 30px;
+  /* Adjusted logo size */
+  width: auto;
+  /* Maintain aspect ratio */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin-left: 800px;
+  /* Moves the list to the right */
+  padding-right: 0px;
+  /* Optional: Adds spacing from the right edge */
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+}
+
+.auth-links a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.auth-links .join {
+  color: #0073b1;
+}
+
+.auth-links .sign-in {
+  border: 1px solid #0073b1;
+  padding: 5px 10px;
+  color: #0073b1;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f3f2ef;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  /* Makes the button fully rounded */
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.google-btn img {
+  height: 20px;
+  /* Adjust Google logo size */
+  width: auto;
+  /* Maintain aspect ratio */
+}
+
+.email-btn {
+  background-color: #0073b1;
+  color: white;
+  border-radius: 50px;
+  /* Ensures "Sign in with email" is fully rounded too */
+}
+
+
+p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+p a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 900px;
+}
